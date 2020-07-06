@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+    </style>
+    <title>AJ Esamann | Software Engineer</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!--navigation on all pages-->
+      <div id="menu-btn" class="hamburger-menu-closed">
+        <span class="bar1 bar-closed"></span>
+        <span class="bar2 bar-closed"></span>
+        <span class="bar3 bar-closed"></span>
+      </div>
+      <div class="nav flex-center nav-closed">
+        <div class="nav-links flex-center">
+          <a href="index.html" class="home-link">Home</a>
+          <a href="projects.html" class="projects-link">Projects</a>
+          <a href="contact.html" class="contact-link">Contact</a>
+        </div>
+      </div>
+      <!--main content area on homescreen-->
+      <div class="main-block">
+        <div class="main-block-text">
+          <p class="hello">Hello, my name is</p>
+          <span
+            class="name"
+            data-period="2000"
+            data-rotate='["AJ Esamann" , "Mr. Esamann", "Nnamase JA"]'
+          ></span>
+          <p class="intro-text">and I'm a full-stack software developer.</p>
+        </div>
+        <a href="projects.html"
+          ><button class="view-work">
+            View my work<i
+              class="fa fa-angle-double-right icon-text"
+              aria-hidden="true"
+            ></i></button
+        ></a>
+        <div class="scroll-bottom">
+          <div class="scroll">scroll</div>
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <!--about me area on homescreen-->
+      <div class="about-block">
+        <div class="about-block-content flex-center-column">
+          <img
+            src="../assets/images/me.jpg"
+            class="selfie fadein"
+            alt="AJ Esamann"
+          />
+          <div class="about-text fadein">
+            I'm a full-stack developer of about 3 years now, based in
+            Indianapolis, IN. I specialize in building user-friendly websites
+            and applications mainly utilizing PHP, Python, and JavaScript.
+            Whether it's working with databases, APIs, or designing a user
+            interface, I have experience in most all areas. Get in touch!
+          </div>
+        </div>
+      </div>
+      <!--skills area-->
+      <div class="skills-block">
+        <div class="skills flex-center-column">
+          <div class="skills-info fadein">
+            These are the technologies I mainly focus on. I thoroughly enjoy
+            working out of my comfort zone and learning new techniques. Click
+            each skill to see my proficiency in that specific technology! I'm
+            rating myself out of 10.
+          </div>
+          <div class="skills-con fadein">
+            <div class="row">
+              <div id="html" class="html skill">HTML</div>
+              <div id="css" class="css skill">CSS</div>
+            </div>
+            <div class="row">
+              <div id="scss" class="scss skill">SCSS</div>
+              <div id="javascript" class="javascript skill">JavaScript</div>
+            </div>
+            <div class="row">
+              <div id="jquery" class="jquery skill">jQuery</div>
+              <div id="python" class="python skill">Python</div>
+            </div>
+            <div class="row">
+              <div id="php" class="php skill">PHP</div>
+              <div id="sql" class="sql skill">SQL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer on all pages-->
+      <div class="footer">
+        <div class="arrow-up">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+        <div class="footer-icons">
+          <a target="_blank" href="https://github.com/ajesamann"
+            ><i class="fa fa-github-alt" aria-hidden="true"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://stackoverflow.com/users/12384756/ajesamann?tab=profile"
+            ><i class="fa fa-stack-overflow" aria-hidden="true"></i
+          ></a>
+          <a target="_blank" href="mailto:aje0098@gmail.com"
+            ><i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="footer-text">
+          AJ Esamann | Software Developer &copy; 2020
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/scripts.js"></script>
+  </body>
+</html>
