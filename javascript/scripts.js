@@ -144,6 +144,15 @@ $(".arrow-up").click(function () {
 
 $(document).ready(function () {
   $(window).scroll(function () {
+    var top_of_window = $(window).scrollTop();
+    var scroll_div = $(".scroll-bottom");
+
+    if (top_of_window > 20) {
+      scroll_div.fadeOut();
+    } else {
+      scroll_div.fadeIn();
+    }
+
     $(".fadein").each(function (i) {
       var top_of_element = $(this).offset();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -154,3 +163,5 @@ $(document).ready(function () {
     });
   });
 });
+
+//hide scroll thing when off the top of the screen
