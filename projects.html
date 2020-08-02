@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/projects.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,71 +33,222 @@
         </div>
       </div>
       <!--projects content-->
-      <div class="projects-container">
-        <div class="p-content">
-          <a
-            target="_blank"
-            href="https://apps.apple.com/us/app/igrocery-shopping-lists/id1496456838"
-            class="view-live"
-            >View live</a
-          >
-          <div class="project1 project">
-            <div class="p1-title title">
-              iGrocery - iOS App
-            </div>
-            <div class="p1-desc p-desc">
-              An iOS application that allows you to create fully featured
-              shopping lists, and saves data locally using Redux Persist. Built
-              using React Native - my first attempt at a mobile application.
-            </div>
+      <div class="project-info-container">
+        <div class="project-info p1-info">
+          <div class="project-title">iGrocery iOS App</div>
+          <div class="project-description">
+            A simple front-end iOS App that helps you shop and keeps track of
+            all the items and lists you've created. Created with React Native. I
+            created this app with the intention to understand how iOS
+            development works. I also learned how to use Redux, and Redux
+            Persist to save data locally.
+          </div>
+          <div class="project-technology">
+            Technologies used: <span>React Native / Redux</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://apps.apple.com/us/app/igrocery-shopping-lists/id1496456838"
+              class="view-live-btn"
+              target="_blank"
+            >
+              <i class="fa fa-desktop" aria-hidden="true"></i> Download App
+            </a>
             <a
               href="https://github.com/ajesamann/iGrocery-iOS-App"
-              class="p1-view view-btn"
               target="_blank"
-              >View this project on GitHub<i
-                class="fa fa-angle-double-right icon-text"
-                aria-hidden="true"
-              ></i
-            ></a>
-            <div class="p1-tech tech">
-              <div class="p1-js tech-skill">JavaScript</div>
-              <div class="p1-rn tech-skill">React Native</div>
-              <div class="p1-redux tech-skill">Redux</div>
-            </div>
+              class="github-btn"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+          <div class="go-back bb1">
+            <i class="fa fa-long-arrow-left"></i>Back to projects
           </div>
         </div>
-        <div class="p-content">
-          <a
-            target="_blank"
-            href="https://password-generating-app.netlify.com/"
-            class="view-live"
-            >View live</a
-          >
-          <div class="project2 project">
-            <div class="p2-title title">
-              Password Generating App
-            </div>
-            <div class="p2-desc p-desc">
-              A simple password generating app w/ some extra features, made with
-              React.
-            </div>
+        <div class="project-info p2-info">
+          <div class="project-title">OffMyChest Web App</div>
+          <div class="project-description">
+            A web application that allows users to join into a community/post
+            area with a given random user ID and create a post about anything.
+            Users can also interact with posts as well. This app was made using
+            PHP mainly, with some jQuery and AJAX. I also used MySQL for the
+            database.
+          </div>
+          <div class="project-technology">
+            Technologies used:
+            <span>PHP / SQL / JavaSciprt / jQuery / AJAX</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://offmychest.herokuapp.com/"
+              class="view-live-btn"
+              target="_blank"
+            >
+              <i class="fa fa-desktop" aria-hidden="true"></i> View Live
+            </a>
+            <a
+              href="https://github.com/ajesamann/OffMyChest-App"
+              target="_blank"
+              class="github-btn"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+          <div class="go-back bb2">
+            <i class="fa fa-long-arrow-left"></i>Back to projects
+          </div>
+        </div>
+        <div class="project-info p3-info">
+          <div class="project-title">VCTY Clothing E-Commerce Website</div>
+          <div class="project-description">
+            About I decided to develop a local clothing store's e-commerce site
+            with complete functionality, allows users to add to cart, remove
+            from cart, add shipping, checkout, etc. Current WIP - Made with
+            React.
+          </div>
+          <div class="project-technology">
+            Technologies used:
+            <span>React / JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://vcty-mfg.netlify.app/"
+              class="view-live-btn"
+              target="_blank"
+            >
+              <i class="fa fa-desktop" aria-hidden="true"></i> View Live
+            </a>
+            <a
+              href="https://github.com/ajesamann/Victory-MFG-Website-Rebrand-E-COM-Site"
+              target="_blank"
+              class="github-btn"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+          <div class="go-back bb3">
+            <i class="fa fa-long-arrow-left"></i>Back to projects
+          </div>
+        </div>
+        <div class="project-info p4-info">
+          <div class="project-title">Password Generating App</div>
+          <div class="project-description">
+            About A simple password generating app w/ some extra features, made
+            with React. Pretty much my first take on a React application.
+          </div>
+          <div class="project-technology">
+            Technologies used:
+            <span>React / JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://password-generating-app.netlify.com/"
+              class="view-live-btn"
+              target="_blank"
+            >
+              <i class="fa fa-desktop" aria-hidden="true"></i> View Live
+            </a>
             <a
               href="https://github.com/ajesamann/Password-Generator-App"
-              class="p2-view view-btn"
               target="_blank"
-              >View this project on GitHub<i
-                class="fa fa-angle-double-right icon-text"
-                aria-hidden="true"
-              ></i
-            ></a>
-            <div class="p2-tech tech">
-              <div class="p1-js tech-skill">JavaScript</div>
-              <div class="p2-r tech-skill">React</div>
-              <div class="p2-css tech-skill">CSS</div>
-            </div>
+              class="github-btn"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+          <div class="go-back bb4">
+            <i class="fa fa-long-arrow-left"></i>Back to projects
+          </div>
+        </div>
+        <div class="project-info p5-info">
+          <div class="project-title">EZEE Design Co. Website</div>
+          <div class="project-description">
+            This is the first website I built utilizing nothing but vanilla
+            HTML, CSS, and JavaScript. The email contact portion was built using
+            PHP. The site was initially used for my personal web development
+            business I ran.
+          </div>
+          <div class="project-technology">
+            Technologies used:
+            <span>HTML / CSS / JavaSciprt / PHP</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://ezee-design-co.netlify.com/"
+              class="view-live-btn"
+              target="_blank"
+            >
+              <i class="fa fa-desktop" aria-hidden="true"></i> View Live
+            </a>
+            <a
+              href="https://github.com/ajesamann/EZEE-Design-Co.-First-Website"
+              target="_blank"
+              class="github-btn"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+          <div class="go-back bb5">
+            <i class="fa fa-long-arrow-left"></i>Back to projects
           </div>
         </div>
       </div>
+
+      <div class="projects-container">
+        <div class="top-projects">
+          <div class="p-title">My Personal Projects</div>
+          <div class="divider"></div>
+          <div class="p-desc">
+            Visit my
+            <a href="https://github.com/ajesamann" target="_blank">github</a> to
+            see all my projects along with the code!
+          </div>
+        </div>
+        <div class="project p1">
+          <div class="project-image p1-img"></div>
+          <div class="project-content">
+            <div class="project-name">iGrocery iOS App</div>
+            <div class="project-stack">React Native / Redux</div>
+            <div class="view-project-btn lm1">Learn More</div>
+          </div>
+        </div>
+        <div class="project p2">
+          <div class="project-image p2-img"></div>
+          <div class="project-content">
+            <div class="project-name">OffMyChest Web App</div>
+            <div class="project-stack">
+              PHP / SQL / JavaScript / jQuery / AJAX
+            </div>
+            <div class="view-project-btn lm2">Learn More</div>
+          </div>
+        </div>
+        <div class="project p3">
+          <div class="project-image p3-img"></div>
+          <div class="project-content">
+            <div class="project-name">VCTY Clothing E-Commerce Website</div>
+            <div class="project-stack">React / JavaScript</div>
+            <div class="view-project-btn lm3">Learn More</div>
+          </div>
+        </div>
+        <div class="project p4">
+          <div class="project-image p4-img"></div>
+          <div class="project-content">
+            <div class="project-name">Password Generating App</div>
+            <div class="project-stack">React / JavaScript</div>
+            <div class="view-project-btn lm4">Learn More</div>
+          </div>
+        </div>
+        <div class="project p5">
+          <div class="project-image p5-img"></div>
+          <div class="project-content">
+            <div class="project-name">EZEE Design Co. Website</div>
+            <div class="project-stack">HTML / CSS / JavaScript / PHP</div>
+            <div class="view-project-btn lm5">Learn More</div>
+          </div>
+        </div>
+      </div>
+
       <!--footer on all pages-->
       <div class="footer">
         <div class="arrow-up">
@@ -112,6 +263,7 @@
           AJ Esamann | Software Developer &copy; 2020
         </div>
       </div>
+      <div class="content-shade"></div>
     </div>
 
     <script

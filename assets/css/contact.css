@@ -1,0 +1,217 @@
+.contact-me-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  width: 50%;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-buttons {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#email,
+#phone {
+  border: 1px solid #0093e9;
+  color: #0093e9;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: 0.2s all ease-in-out;
+}
+
+#email {
+  margin-right: 10px;
+}
+
+#phone {
+  margin-left: 10px;
+}
+
+.slide1,
+.slide2 {
+  margin-left: 10px;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn1:hover > .slide1 {
+  margin-left: 25px;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn2:hover > .slide2 {
+  margin-left: 25px;
+  transition: 0.2s all ease-in-out;
+}
+
+.contact-options {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 5px;
+  margin-top: 60px;
+  height: 175px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #183ae2 100%);
+}
+
+.contact-me h1 {
+  margin: 0;
+  height: 100%;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-buttons i {
+  font-size: 1.1rem;
+}
+
+/**mobile devices**/
+@media only screen and (max-width: 600px) {
+  #email {
+    margin-right: 0px;
+  }
+
+  #phone {
+    margin-left: 0px;
+  }
+
+  .contact-me-wrapper {
+    height: auto;
+    padding: 100px 0 75px 0;
+  }
+
+  .contact-text {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .btn2 {
+    margin-top: 30px;
+  }
+
+  .contact-options {
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .phone,
+  .location,
+  .email {
+    text-align: center;
+  }
+
+  .phone,
+  .email {
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  #email,
+  #phone {
+    width: 100%;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  #email {
+    margin-right: 0px;
+  }
+
+  #phone {
+    margin-left: 0px;
+  }
+
+  .contact-me-wrapper {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .contact-text {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .btn2 {
+    margin-top: 30px;
+  }
+
+  .contact-options {
+    width: 80%;
+    text-align: center;
+    padding: 50px 50px;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .phone,
+  .location,
+  .email {
+    text-align: right;
+  }
+
+  .phone,
+  .email {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .contact-me {
+    text-align: left;
+  }
+
+  #email,
+  #phone {
+    width: 100%;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-height: 420px) {
+  .contact-me-wrapper {
+    height: 200vh;
+  }
+}

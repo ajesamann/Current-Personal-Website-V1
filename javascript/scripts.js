@@ -11,12 +11,14 @@ $("#menu-btn").click(function () {
       transition: "all .4s ease-in-out",
       transform: "rotate(45deg)",
       position: "absolute",
+      margin: "0",
     });
     bar3.css({ transition: "all .2s ease-in-out", opacity: "0" });
     bar2.css({
       transition: "all .4s ease-in-out",
       transform: "rotate(-45deg)",
       position: "absolute",
+      margin: "0",
     });
     $("html").css("overflow", "hidden");
   } else if (menu.hasClass("nav-opened")) {
@@ -26,12 +28,14 @@ $("#menu-btn").click(function () {
       transition: "all .4s ease-in-out",
       transform: "rotate(0deg)",
       position: "relative",
+      marginBottom: "7.5px",
     });
     bar3.css({ transition: "all .5s ease-in-out", opacity: "1" });
     bar2.css({
       transition: "all .4s ease-in-out",
       transform: "rotate(0deg)",
       position: "relative",
+      marginBottom: "7.5px",
     });
     $("html").css("overflow", "scroll");
   }
@@ -164,4 +168,39 @@ $(document).ready(function () {
   });
 });
 
-//hide scroll thing when off the top of the screen
+//pop up the project info when learn more is clicked
+
+let projectInfoArray = [
+  { btn: $(".lm1"), content: $(".p1-info"), backBtn: $(".bb1") },
+  { btn: $(".lm2"), content: $(".p2-info"), backBtn: $(".bb2") },
+  { btn: $(".lm3"), content: $(".p3-info"), backBtn: $(".bb3") },
+  { btn: $(".lm4"), content: $(".p4-info"), backBtn: $(".bb4") },
+  { btn: $(".lm5"), content: $(".p5-info"), backBtn: $(".bb5") },
+];
+
+for (let i = 0; i < projectInfoArray.length; i++) {
+  let currentContent = projectInfoArray[i].content;
+  projectInfoArray[i].btn.click(function () {
+    if (projectInfoArray[i].content.css("display", "none")) {
+      //show the current content
+      $("html").css("overflow", "hidden");
+      projectInfoArray[i].content.css("display", "flex").hide().slideDown();
+      $(".content-shade").fadeIn();
+      //set all the other content in the array to display none
+      var newArray = projectInfoArray.filter(
+        (item) => item.content !== currentContent
+      );
+
+      for (var v = 0; v < newArray.length; v++) {
+        newArray[v].content.css("display", "none");
+      }
+    }
+  });
+
+  //set everything back to normal when the back button is pressed
+  projectInfoArray[i].backBtn.click(function () {
+    currentContent.slideUp();
+    $("html").css("overflow", "scroll");
+    $(".content-shade").fadeOut();
+  });
+}
