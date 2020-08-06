@@ -50,7 +50,7 @@ $(".skill").click(function () {
     { skill: "SCSS", rating: "8/10", id: "scss" },
     { skill: "JavaScript", rating: "7/10", id: "javascript" },
     { skill: "jQuery", rating: "7/10", id: "jquery" },
-    { skill: "Python", rating: "5/10", id: "python" },
+    { skill: "Node.js", rating: "5/10", id: "node" },
     { skill: "PHP", rating: "6/10", id: "php" },
     { skill: "SQL", rating: "5/10", id: "sql" },
   ];
